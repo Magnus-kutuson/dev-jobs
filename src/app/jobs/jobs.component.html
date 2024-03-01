@@ -1,0 +1,116 @@
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+<div class="body">
+
+<app-header></app-header>
+
+<nav>
+      <a routerLink="/jobs"></a>
+</nav>
+<router-outlet></router-outlet>
+<div class="grid-container">
+
+      <app-grid *ngFor="let item of jobList" [jobList]=" item"></app-grid>
+
+</div>
+
+</div> -->
+
+<!-- <div class="vl">
+   <i class="fa-regular fa-magnifying-glass">
+
+    </i>
+
+     <input type="text" placeholder="Filter by title,company,expertise" >
+
+</div> -->
+<!-- input type="text" placeholder="Filter by title,company,expertise" >
+
+</div>  -->
+<div class="image-container">
+    <div class="header">
+      <div class="title">
+        {{ title }}
+      </div>
+      <div class="mode">
+        <img src="../../assets/desktop/icon-sun.svg" alt="icon-sun" />
+        <!-- <label class="switch">
+              <input type="checkbox" (click)="switchThemeService.switchTheme()">
+              <span class="slider"></span>
+          </label> -->
+        <!--Theme switch-->
+        <label class="switch">
+          <input
+            type="checkbox"
+            id="themeToggle"
+            (click)="switchThemeService.switchTheme()"
+          />
+          <span class="slider round"></span>
+        </label>
+        <img src="../../assets/desktop/icon-moon.svg" alt="icon-moon" />
+      </div>
+    </div>
+  </div>
+<!-- <div class="mode">-->
+<!--    <img src="../../assets/desktop/icon-sun.svg" alt="icon-sun">-->
+<!--    <label class="switch">-->
+<!--        <input type="checkbox" (click)="switchThemeService.switchTheme()">-->
+<!--        <span class="slider"></span>-->
+<!--    </label>-->
+<!--    <img src="../../assets/desktop/icon-moon.svg" alt="icon-moon">-->
+<!-- </div>-->
+
+
+
+    <div class="mainContainer">
+        <div class="container">
+             <div  style="display: flex; width: 100%;">
+              <span style="display: flex; justify-content: center; align-items: center;" class="border" [style.backgroundColor]="JobbList?.logoBackground"><img [src]="JobbList?.logo" alt=""></span>
+                <div class="" style="width: inherit; display: flex; align-items: center;">
+                  <span style="margin-left: 1.5rem; color: #19202D; font-size: 24px; font-weight: bold;">
+                    {{JobbList?.company}}
+                  <h5 style="font-size: 16px; color: #6E8098;">{{JobbList?.company}}.com</h5>
+                  </span>
+                  <button type="button" style="margin-left: auto; margin-right:1.5rem">Company site</button>
+                </div>
+             </div>
+
+               
+
+
+            <!-- <img src="../../assets/desktop/scoot.svg" alt="scoot"> -->
+
+
+           
+        </div>
+        <div class="page-container" >
+
+         <!-- <p>{{JobbList?.id}}</p> -->
+        <p>{{JobbList?.postedAt}} . {{JobbList?.contract}}</p>
+        <h3>{{JobbList?.position}} <button class="app">Apply Now</button></h3>
+        <h5>{{JobbList?.location}}</h5>
+        <h6>{{JobbList?.description}}</h6>
+        <h1><b>Requirements</b></h1>
+        <h6>{{JobbList?.requirements.content}}</h6>
+        <h2>What You Will Do</h2>
+        <h6>{{JobbList?.requirements.items}}</h6>
+        </div>
+
+
+
+<!--    </div>-->
+<!--   -->
+<!--</div>-->
+<footer>
+    <div class="footer-container">
+        <div class="f-left">
+          <h1>{{JobbList?.company}}</h1>
+            <h2>So Digital Inc</h2>
+        </div>
+        <button class="app">Apply Now</button>
+    </div>
+</footer>
+<!--</div>-->
+

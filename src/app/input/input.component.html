@@ -1,0 +1,21 @@
+<div [class]="switchThemeService.darkLight? 'light-theme': 'dark-theme'">
+    <div  style="display: inline-flex; justify-content: center; width: 100%;">
+        <div class="container">
+            <div class="images">
+                <img src="../../assets/desktop/icon-search.svg" alt="icon-search">
+                <input type="text" placeholder="Filter by title, companies, expertise">
+            </div>
+            <div class="image">
+                <img src="../../assets/desktop/icon-location.svg" alt="icon-location">
+                <input type="text" placeholder="Filter by location">
+            </div>
+            <div class="check padding-1">
+                <div class="styled-checkbox">
+                    <input type="checkbox" class="styled-checkbox">
+                    <p>Full Time Only</p>
+                </div>
+                <button value="Search">Search</button>
+            </div>
+         </div>
+    </div>
+    </div>

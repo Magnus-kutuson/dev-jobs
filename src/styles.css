@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #f4f6f8;
+  font-family: kumbh san;
+  margin-bottom: 0;
+}
+
+styles.css or styles.scss
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .dark-theme {
+    background-color: #121721;
+    color: #ffffff;
+  }
+

@@ -1,0 +1,81 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#FFFFFF;
+  width: 80%;
+  height: 80px;
+  margin-top: -40px;
+  border-radius: 10px;
+}
+input[type='text']{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: none;
+  border-right: 1px solid #979797;
+  cursor: pointer;
+}
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+.images{
+display: flex;
+align-items: center;
+justify-self: center;
+}
+.image{
+display: flex;
+align-items: center;
+justify-self: center;
+}
+img{
+padding: 20px;
+}
+.styled-checkbox{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+input[type='checkbox']{
+/* appearance: none; */
+/* -webkit-appearance: none; */
+width: 40px;
+height: 24px;
+border: none;
+/* background-color: #979797; */
+cursor: pointer;
+}
+
+.styled-checkbox p{
+font-weight: bolder;
+padding-right: 100px;
+padding-left: 20px;
+margin-top: 14px;
+text-align: center;
+}
+
+button[value="Search"]{
+/* width: 100%; */
+/* height: 48px; */
+color: #fff;
+background-color: #5964E0;
+border: none;
+border-radius: 10px;
+padding: 1rem 2rem;
+}
+
+.padding-1{
+  padding: 1rem;
+}
+.dark-theme .container {
+background-color: #19202D;
+color: #ffffff;
+}
+.dark-theme input {
+background-color: #19202D;
+color: #ffffff;
+}

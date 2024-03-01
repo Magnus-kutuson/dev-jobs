@@ -1,0 +1,107 @@
+body{
+  background-color: #f4f6f8;
+  font-family: kumbh Sans;
+  overflow: hidden;
+}
+
+
+.grid-container{
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 20% 20% 20% 20%; 
+  background-color: #f4f6f8;
+  padding: 100px;
+  width: 100%;
+  height: 100%;
+  margin: 60px auto;
+  border: 1px solid #f4f6f8;
+  position: relative;
+  
+} 
+
+.grid-items p{
+  color: #6e8098;
+  font-size: 16px;
+}
+
+.grid-items h3{
+  font-size: 20px;
+}
+.grid-items h5{
+  color: #5964e0;
+  font-size: 14px;
+  padding-top: 40px;
+}
+.grid-items img[src='joblist.log']{
+  position: absolute;
+  top: 20px;
+}
+.grid-items img[alt=blogr]{
+  position: absolute;
+  top: 230px;
+  left: 530px;
+}
+.grid-items img[alt=vector]{
+  position: absolute;
+  top: 230px;
+  left: 930px;
+}
+.grid-items img[alt=Officelite]{
+  position: absolute;
+  top: 500px;
+  left: 930px;
+}
+.grid-items img[alt=Pod]{
+  position: absolute;
+  bottom: 43px;
+  left: 530px;
+}
+
+.grid-items img[alt=creative]{
+  position: absolute;
+  bottom: 43px;
+  left: 930px;
+}
+.grid-items img[alt=pomodoro]{
+  position: absolute;
+  top: 770px;
+  left: 930px;
+}
+.grid-items img[alt=maker]{
+  position: absolute;
+  top: 770px;
+  left: 530px;
+}
+
+.grid-items img[alt=coffeeroaster]{
+  position: absolute;
+  top: 770px;
+  left: 930px;
+}
+ .grid-items img[alt=mastercraft]{
+  position: absolute;
+  top: 1040px;
+  left: 930px; 
+}
+.grid-items img[alt=crowdfund]{
+  position: absolute;
+  top: 1040px;
+  left: 530px;
+}
+
+.grid-items img[alt=typemaster]{
+  position: absolute;
+  top: 1040px;
+  left: 930px;
+} 
+
+button{
+  background-color: #5964e0;
+  color: #fff;
+  width: 141px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+}  
