@@ -1,4 +1,4 @@
-.container{
+/* .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +15,7 @@ input[type='text']{
   border: none;
   border-right: 1px solid #979797;
   cursor: pointer;
-}
+} */
 .check{
   display: flex;
   align-items: center;
@@ -27,14 +27,7 @@ display: flex;
 align-items: center;
 justify-self: center;
 }
-.image{
-display: flex;
-align-items: center;
-justify-self: center;
-}
-img{
-padding: 20px;
-}
+
 .styled-checkbox{
   display: flex;
   align-items: center;
@@ -50,23 +43,15 @@ border: none;
 cursor: pointer;
 }
 
-.styled-checkbox p{
+/* .styled-checkbox p{
 font-weight: bolder;
 padding-right: 100px;
 padding-left: 20px;
 margin-top: 14px;
 text-align: center;
-}
+} */
 
-button[value="Search"]{
-/* width: 100%; */
-/* height: 48px; */
-color: #fff;
-background-color: #5964E0;
-border: none;
-border-radius: 10px;
-padding: 1rem 2rem;
-}
+
 
 .padding-1{
   padding: 1rem;
@@ -78,4 +63,232 @@ color: #ffffff;
 .dark-theme input {
 background-color: #19202D;
 color: #ffffff;
+}
+.dark-theme body{
+  background-color: #121721;
+  color: #ffffff;
+}
+
+
+/* @media (min-width: 300px) {
+  .container-mobile{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color:#FFFFFF;
+      width: 80%;
+      height: 80px;
+      margin-top: -40px;
+      border-radius: 10px;
+  }
+  .container{
+    display: none;
+  }
+
+  input[type='text']{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-left: -1rem;
+    border: none;
+    border-right: 1px solid #979797;
+    cursor: pointer;
+  }
+
+  .styled-checkbox p{
+    margin-left: -1rem;
+    font-weight: bolder;
+   padding-right: 100px;
+   padding-left: 20px;
+   margin-top: 14px;
+   text-align: center;
+  }
+
+  button[value="Search"]{
+    /* width: 100%; */
+    /* height: 48px; */
+    /* color: #fff;
+    background-color: #5964E0;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-left: -2rem; */
+    /* } */
+/* .image{
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      }
+      
+img{
+  padding: 20px;
+  }
+  
+} */ 
+@media only screen and (max-width: 2560px) and (min-width: 969px){
+  .container-mobile{
+    display: none;
+  }
+  .container{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color:#FFFFFF;
+      width: 80%;
+      height: 80px;
+      margin-top: -40px;
+      border-radius: 10px;
+  }
+
+  input[type='text']{
+    /* width: 100%;
+    height: 100%; */
+    padding: 20px;
+    /* margin-left: -1rem; */
+    border: none;
+    /* border-right: 1px solid #979797; */
+    cursor: pointer;
+  }
+
+  .styled-checkbox p{
+    margin-left: -1rem;
+    font-weight: bolder;
+   padding-right: 100px;
+   padding-left: 20px;
+   margin-top: 14px;
+   text-align: center;
+  }
+
+  button[value="Search"]{
+    /* width: 100%; */
+    /* height: 48px; */
+    color: #fff;
+    background-color: #5964E0;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-left: -2rem;
+    }
+    .image{
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      }
+      
+img{
+  padding: 5px;
+  /* padding-right: -2.8rem; */
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 669px){
+  .container-mobile{
+    display: none;
+  }
+  .container{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color:#FFFFFF;
+      width: 80%;
+      height: 80px;
+      margin-top: -40px;
+      border-radius: 10px;
+  }
+
+  input[type='text']{
+    /* width: 100%;
+    height: 100%; */
+    padding: 20px;
+    /* margin-left: -1rem; */
+    border: none;
+    /* border-right: 1px solid #979797; */
+    cursor: pointer;
+  }
+
+  .styled-checkbox p{
+    margin-left: -1rem;
+    font-weight: bolder;
+   padding-right: 100px;
+   padding-left: 20px;
+   margin-top: 14px;
+   text-align: center;
+  }
+
+  button[value="Search"]{
+    /* width: 100%; */
+    /* height: 48px; */
+    color: #fff;
+    background-color: #5964E0;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-left: -2rem;
+    }
+    .image{
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      }
+      
+  img{
+  padding: 5px;
+  /* padding-right: -2.8rem; */
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 300px){
+  .container{
+    display: none;
+  }
+  .container-mobile{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color:#FFFFFF;
+      /* width: 80%; */
+      height: 80px;
+      margin-top: -40px;
+      border-radius: 10px;
+      padding-right: 1rem;
+  }
+  input[type='text']{
+    /* width: 100%;
+    height: 100%; */
+    padding: 20px;
+    /* margin-left: -1rem; */
+    border: none;
+    /* border-right: 1px solid #979797; */
+    cursor: pointer;
+  }
+
+  .styled-checkbox p{
+    margin-left: -1rem;
+    font-weight: bolder;
+   padding-right: 100px;
+   padding-left: 20px;
+   margin-top: 14px;
+   text-align: center;
+  }
+
+  button[value="Search"]{
+    /* width: 100%; */
+    /* height: 48px; */
+    color: #fff;
+    background-color: #5964E0;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-left: -2rem;
+    }
+    .image{
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      }
+      
+img{
+  padding: 5px;
+  /* padding-right: -2.8rem; */
+  }
+
 }
