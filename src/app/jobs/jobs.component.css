@@ -238,6 +238,7 @@ button[type='button']{
     width: 730px;
     /* height: 78.563rem; */
     margin-top: 150px;
+    /* scale: 0; */
     padding: 50px;
     padding-bottom: 50px;
     background-color: #fff;
