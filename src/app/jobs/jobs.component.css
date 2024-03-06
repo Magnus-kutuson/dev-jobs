@@ -376,10 +376,10 @@ h2{
     justify-content: space-between;
     background-color:#FFFFFF;
     width: 60%;
-    height: 140px;
-    margin-top: -40px;
+    /* height: 60%; */
+    margin-top: -1px;
     border-radius: 10px;
-    /* margin-left: 120px; */
+    margin-left: 80px;
     /* padding-left: 50px; */
   }
 
@@ -623,14 +623,16 @@ button[type='button']{
     align-items: center;
 } */
 .border{
-    width: 140px;
-    height: 140px;
+    width: 1px;
+    height: auto;
     background-color: #E99210;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: -5rem;
-    /* border-radius: 10px; */
+    margin-left: 1rem;
+    margin-top: -4rem;
+    border-radius: 10px;
+    padding: 50px;
     /* margin-top: -6rem; */
 }
 

@@ -14,17 +14,22 @@ import { ThemeService } from '../theme.service';
 
 })
 export class HomeComponent implements OnInit {
-  
-  constructor(private js: JobsService, public switchThemeService:ThemeService){}
-  jobList: Jobs []=[];
+  inputTitle = '';
+  inputLocation ='';
+  defaultList: Jobs[];
+  jobList: Jobs [];
+  constructor(public js: JobsService, public switchThemeService:ThemeService){}
+
   
 
 ngOnInit(){
   this.js.getJobs().subscribe((response)=>{
-    this.jobList = response;
-    
-
-    
+    this.defaultList = response
+    this.jobList = this.defaultList;
+    // console.log(this.defaultList)
   })
+
+  
+
 }
 }

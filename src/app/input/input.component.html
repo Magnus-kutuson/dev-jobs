@@ -2,28 +2,69 @@
     <div  style="display: inline-flex; justify-content: center; width: 100%;">
         <div class="container">
             <div class="images">
-                <img src="../../assets/desktop/icon-search.svg" alt="icon-search">
-                <input type="text" placeholder="Filter by title, companies, expertise">
+                <img src="../../assets/desktop/icon-search.svg" alt="icon-search"  >
+                <input type="text"  placeholder="Filter by title, companies, expertise" [(ngModel)]="searchQuery1" name="searchByTitle">
             </div>
             <div class="image">
-                <img src="../../assets/desktop/icon-location.svg" alt="icon-location">
-                <input type="text" placeholder="Filter by location">
+                <img src="../../assets/desktop/icon-location.svg" alt="icon-location" >
+                <input type="text"   placeholder="Filter by location" [(ngModel)]="searchQuery2" name="seaarchByLocation">
+            </div>
+            <div>
+                <div>
+                    <!-- <input type="text" placeholder="Enter search query" [(ngModel)]="searchQuery1">
+                    <input type="text" placeholder="Enter search query" [(ngModel)]="searchQuery2"> -->
+                    <!-- <button (click)="search()">Search</button> -->
+                  </div>
+                  <div *ngIf="searched">
+                    <!-- Display search results here -->
+                    <!-- <p>Search results for Query 1: {{ searchQuery1 }}</p>
+                    <p>Search results for Query 2: {{ searchQuery2 }}</p> -->
+                  </div>
+                  
             </div>
             <div class="check padding-1">
                 <div class="styled-checkbox">
                     <input type="checkbox" class="styled-checkbox">
                     <p>Full Time Only</p>
                 </div>
-                <button value="Search">Search</button>
+                <button value="Search" (click)="search($event.target)">Search</button>
+                </div>
             </div>
-         </div>
-         <div class="container-mobile">
+        </div>
+         <!-- <div class="container-mobile">
             <div class="image">
                 <input type="text" placeholder="Filter by title...">
-                <img src="../../assets/mobile/icon-filter.svg" alt="">
+                <div class="box">
+                <div id="pop-up" class="modal">
+                        <a href="#"><img src="../../assets/mobile/icon-filter.svg" alt=""></a>
+                </div>
+                </div>
                 <img src="../../assets/mobile/search-button.svg" alt="icon-location">
             </div>
 
          </div>
+    </div> -->
+<div class="container-mobile">
+    <div class="images">
+    <input type="text" placeholder="Filter by title...">
+    <div class="box">
+        <a href="#popup-box">
+            <img src="../../assets/mobile/icon-filter.svg" alt="">
+        </a>
     </div>
+    <div id="popup-box" class="modal">
+        <div class="content">
+            <div class="mini-container">
+                <input type="text" placeholder="Filter by location">
+                <input type="checkbox" class="styled-checkbox">
+                <p>Full Time Only</p>
+            </div>
+            <button value="Search">Search</button>
+            <a href="#" class="box-close">
+                ×
+            </a>
+        </div>
     </div>
+    <img src="../../assets/mobile/search-button.svg" alt="icon-location">
+    </div>
+</div>

@@ -14,7 +14,7 @@
 
 <div class="grid-container">
    
-      <app-grid *ngFor="let item of jobList" [jobList]=" item"></app-grid>
+      <app-grid *ngFor="let item of jobList|filter:js.searchQuery1" [jobList]=" item"></app-grid>
 
       <button>Load more</button>
 

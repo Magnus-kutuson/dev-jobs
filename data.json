@@ -1,6 +1,5 @@
 
-{"jobs": 
-[
+{"jobs": [
   {
   "id": 1,
   "company": "Scoot",
@@ -480,4 +479,5 @@
       "Proactively solve the problems most important to the business"
     ]
   }
-}]}
+}]
+}
